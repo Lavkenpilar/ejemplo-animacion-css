@@ -19,9 +19,30 @@
             from {left:0px}
             to {left: 200px;}
         }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text {
+            font-size: 3em;
+            animation: move 2s infinite;
+        }
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px);
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="box"></div>    
+    <div class="box"></div>  
+    <div class="container">
+        <h1 class="text">Hola mundo</h1>
+    </div>  
 </body>
 </html>
